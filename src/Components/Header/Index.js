@@ -1,29 +1,27 @@
 import React from "react";
-import Logo from "../Img/logo.webp"
+import Logo from "../Img/logo.webp";
+import { Link } from "react-router-dom";
 
 export const Header = () => {
     return (
         <div>
             <header>
-                {/* <div className="menu">
-                    <box-icon name="menu"></box-icon>
-                </div> */}
-                <a href="#">
+                <Link to="/Inicio">
                     <div className="logo">
                         <img src={Logo} alt="logo" height={"100px"}></img>
                     </div>
-                </a>
+                </Link>
                 <ul>
                     <li>
-                        <a className="lnk" href="#">Inicio</a>
+                        <Link className="lnk" to="/">Inicio</Link>
                     </li>
                     <li>
-                        <a className="lnk" href="#">Carrito</a>
+                        <Link className="lnk" to="/Products">Productos</Link>
                     </li>
                 </ul>
                 <div className="cart">
                     <box-icon name="cart"></box-icon>
-                    <span className="all_item">2</span>
+                    <span className="all_item">0</span>
                 </div>
             </header>
         </div>
