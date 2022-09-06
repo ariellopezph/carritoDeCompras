@@ -116,12 +116,25 @@ header .cart span {
   }
  
 }
+/*---------------------- INICIO ----------------------*/
+
+.inicio {
+  width: 100%;
+  margin: 0 auto;
+
+}
+
+.inicio > img {
+  width: 100%;
+  
+}
 
 
 /*---------------------- PRODUCTS ----------------------*/
 
 .title {
-  font-size: 2.4rem;
+  font-size: 2rem;
+  letter-spacing: 2px;
   padding: 10rem 0 0 0;
   color: black;
 }
@@ -219,3 +232,4 @@ header .cart span {
 .button > button:hover {
   box-shadow: 3px 3px 10px black;
 }
+
